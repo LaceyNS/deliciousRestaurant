@@ -1,3 +1,20 @@
 ul {
     list-style: none;
+        a{
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                color: green
+            }
+        }
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header a {
+    padding: 10px;
 }

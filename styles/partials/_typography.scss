@@ -1,21 +1,30 @@
-    // font-family: 'Raleway', sans-serif;
-
-    // font-family: 'Lora', serif;
+$mainFont: 'Lora', serif;
+$titleFont: 'Raleway', sans-serif;
 
 html {
     font-size: 62.5%;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: $titleFont;
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 3.6rem;
     letter-spacing: 0.5px;
 }
 
+.headerLogo a{
+    color: black;
+    text-decoration: none;
+    font-family: $titleFont;
+    font-size: 4.6rem;
+    font-weight: 700;
+    line-height: 2.4rem; 
+    letter-spacing: 1.1px;
+}
+
 footer h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: $titleFont;
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.4rem;
@@ -24,14 +33,14 @@ footer h3 {
 
 footer p,
 footer a {
-    font-family: 'Lora', serif;
+    font-family: $mainFont;
     font-size: 1.3rem;
     line-height: 4.4rem;
     letter-spacing: 0.3px;
 } 
 
 blockquote {
-    font-family: 'Lora', serif;
+    font-family: $mainFont;
     font-size: 2.4rem;
     font-style: italic;
     letter-spacing: 0.6px;

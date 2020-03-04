@@ -1,3 +1,22 @@
-header {
-    background-image: url(../delicious-assets/home-1.jpeg);
+
+.indexPage header {
+    @include headerBackground("../delicious-assets/home-1.jpeg");
 }
+
+.blogPage header {
+    @include headerBackground("../delicious-assets/blog-1.jpeg");
+}
+
+.contactPage header {
+    @include headerBackground("../delicious-assets/contact-1.jpeg");
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    li {
+        display: none;
+    }
+}
+

@@ -226,15 +226,25 @@ html {
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 3.6rem;
   letter-spacing: 0.5px;
 }
 
+.headerLogo a {
+  color: black;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 4.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 1.1px;
+}
+
 footer h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.4rem;
@@ -243,23 +253,79 @@ footer h3 {
 
 footer p,
 footer a {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 1.3rem;
   line-height: 4.4rem;
   letter-spacing: 0.3px;
 }
 
 blockquote {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 2.4rem;
   font-style: italic;
   letter-spacing: 0.6px;
 }
 
-header {
-  background-image: url(../delicious-assets/home-1.jpeg);
+.indexPage header {
+  background-image: url("../delicious-assets/home-1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+
+.blogPage header {
+  background-image: url("../delicious-assets/blog-1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+
+.contactPage header {
+  background-image: url("../delicious-assets/contact-1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+}
+
+.menu li {
+  display: none;
 }
 
 ul {
   list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+}
+
+ul a:hover {
+  color: green;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header a {
+  padding: 10px;
 }
