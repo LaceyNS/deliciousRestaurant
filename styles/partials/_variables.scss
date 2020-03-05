@@ -1,6 +1,6 @@
-@mixin headerBackground ($backgroundImage) {
+@mixin headerBackground ($backgroundImage, $backgroundHeight) {
     background-image: url($backgroundImage);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: $backgroundHeight;
 }

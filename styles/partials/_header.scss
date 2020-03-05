@@ -1,14 +1,14 @@
 
 .indexPage header {
-    @include headerBackground("../delicious-assets/home-1.jpeg");
+    @include headerBackground("../deliciousAssets/home1.jpeg", 70vh);
 }
 
 .blogPage header {
-    @include headerBackground("../delicious-assets/blog-1.jpeg");
+    @include headerBackground("../deliciousAssets/blog1.jpeg", 50vh);
 }
 
 .contactPage header {
-    @include headerBackground("../delicious-assets/contact-1.jpeg");
+    @include headerBackground("../deliciousAssets/contact1.jpeg", 50vh);
 }
 
 .menu {
