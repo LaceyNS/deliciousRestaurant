@@ -243,8 +243,13 @@ body {
   letter-spacing: 1.1px;
 }
 
+.indexPage section {
+  text-align: center;
+}
+
 footer h3 {
   font-family: "Raleway", sans-serif;
+  color: #F6F6F6;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.4rem;
@@ -257,6 +262,7 @@ footer a {
   font-size: 1.3rem;
   line-height: 4.4rem;
   letter-spacing: 0.3px;
+  color: #999999;
 }
 
 blockquote {
@@ -307,11 +313,6 @@ ul {
 
 ul a {
   text-decoration: none;
-  color: black;
-}
-
-ul a:hover {
-  color: green;
 }
 
 header ul {
@@ -336,14 +337,44 @@ img {
 }
 
 .recipes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.indexPage h2 {
+  position: relative;
+}
+
+.divider {
+  width: 10rem;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  background-color: #64A604;
+}
+
+.recipesContent {
+  padding: 4rem;
+}
+
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.testimonial {
+  background-color: #DDED9A;
+}
+
+footer {
+  background-color: #333333;
+}
+
+.copyright {
+  background-color: #2E2E2E;
 }

@@ -1,3 +1,14 @@
+$mainFont: 'Lora', serif;
+$titleFont: 'Raleway', sans-serif;
+$lightColour: #F6F6F6;
+$midColour: #999999;
+$darkColour:#333333;
+$darkestColour:#2E2E2E;
+$secColour: #64A604;
+$lightSecColour: #DDED9A;
+
+$otherColour: #DC1570;
+
 @mixin headerBackground ($backgroundImage, $backgroundHeight) {
     background-image: url($backgroundImage);
     background-size: cover;
