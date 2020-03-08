@@ -17,6 +17,18 @@
     padding: 2rem;
     li {
         display: none;
+        a {
+            color: $darkColour;
+            text-transform: uppercase;
+        }
     }
 }
 
+@media (min-width: 900px) {
+    header .menu li {
+        display: inherit;
+    }
+    .bars {
+        display: none;
+    }
+}

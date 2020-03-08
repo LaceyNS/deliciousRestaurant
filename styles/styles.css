@@ -243,13 +243,36 @@ body {
   letter-spacing: 1.1px;
 }
 
-.indexPage section {
+.indexPage main {
   text-align: center;
+}
+
+.recipeOptions i {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.recipeOptions {
+  background-color: #F6F6F6;
+}
+
+.recipeOptions h3 {
+  text-transform: uppercase;
+}
+
+.recipeOptions p {
+  color: #999999;
 }
 
 footer h3 {
   font-family: "Raleway", sans-serif;
+  padding-bottom: 25px;
+}
+
+footer h3,
+footer i {
   color: #F6F6F6;
+  text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.4rem;
@@ -257,12 +280,19 @@ footer h3 {
 }
 
 footer p,
-footer a {
+footer a,
+footer legend {
   font-family: "Lora", serif;
   font-size: 1.3rem;
   line-height: 4.4rem;
   letter-spacing: 0.3px;
   color: #999999;
+}
+
+.copyright a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #64A604;
 }
 
 blockquote {
@@ -305,6 +335,20 @@ blockquote {
 
 .menu li {
   display: none;
+}
+
+.menu li a {
+  color: #333333;
+  text-transform: uppercase;
+}
+
+@media (min-width: 900px) {
+  header .menu li {
+    display: inherit;
+  }
+  .bars {
+    display: none;
+  }
 }
 
 ul {
@@ -352,7 +396,7 @@ img {
   height: 5px;
   position: absolute;
   bottom: 0;
-  left: 45%;
+  left: 40%;
   background-color: #64A604;
 }
 
@@ -360,21 +404,148 @@ img {
   padding: 4rem;
 }
 
+.recipeOptions {
+  padding: 50px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.recipeOptions li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.recipeOptions li div {
+  padding: 10px;
+}
+
+.restaurantImage {
+  position: relative;
+}
+
+.restaurantMainImage {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.seal {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -30px;
+  right: 20%;
+}
+
 .gallery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  -ms-grid-columns: (minmax(350px, 1fr), minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr), minmax(350px, 1fr));
 }
 
 .testimonial {
   background-color: #DDED9A;
 }
 
+.contactDetails {
+  background-color: #F6F6F6;
+}
+
+.contactForm {
+  background-color: #FFFFFF;
+}
+
+.contactForm input {
+  background-color: #F6F6F6;
+}
+
+.contactForm input[placeholder] {
+  color: #999999;
+  font-style: inherit;
+  font-family: "Lora", serif;
+}
+
+.contactImage {
+  background-image: url(../deliciousAssets/contact2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vh;
+}
+
 footer {
   background-color: #333333;
 }
 
+.wrapper {
+  max-width: 1300px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+.footer {
+  text-align: left;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.footerLogo {
+  text-transform: uppercase;
+  color: #64A604;
+  font-size: 3.6rem;
+  padding-bottom: 15px;
+}
+
+.footer p,
+.footer li,
+form {
+  border-bottom: 0.5px solid #999999;
+}
+
+.subscribeForm input[type="email"] {
+  background-color: #525252;
+  width: 80%;
+}
+
+.subscribeForm input[type="email"],
+.subscribeForm button {
+  margin: 25px 0;
+  border: none;
+  float: left;
+}
+
+.subscribeForm input[placeholder] {
+  padding: 15px 25px;
+  color: #F6F6F6;
+  font-style: italic;
+}
+
+.subscribeForm button {
+  background-color: #64A604;
+  padding: 15px 20px;
+  width: 20%;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials i {
+  padding: 10px;
+}
+
 .copyright {
   background-color: #2E2E2E;
+  padding-left: 10%;
 }

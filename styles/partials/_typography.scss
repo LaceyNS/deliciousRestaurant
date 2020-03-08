@@ -20,13 +20,34 @@ body {
     letter-spacing: 1.1px;
 }
 
-.indexPage section {
+.indexPage main {
     text-align: center;
+}
+
+.recipeOptions i {
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+
+.recipeOptions {
+    background-color: $lightColour;
+    h3 {
+        text-transform: uppercase;
+    }
+    p {
+        color: $midColour;
+    }
 }
 
 footer h3 {
     font-family: $titleFont;
+    padding-bottom: 25px;
+}
+
+footer h3,
+footer i {
     color: $lightColour;
+    text-transform: uppercase;
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.4rem;
@@ -34,7 +55,8 @@ footer h3 {
 }
 
 footer p,
-footer a {
+footer a,
+footer legend {
     font-family: $mainFont;
     font-size: 1.3rem;
     line-height: 4.4rem;
@@ -42,10 +64,15 @@ footer a {
     color: $midColour;
 } 
 
+.copyright a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $secColour;
+}
+
 blockquote {
     font-family: $mainFont;
     font-size: 2.4rem;
     font-style: italic;
     letter-spacing: 0.6px;
 }
- 

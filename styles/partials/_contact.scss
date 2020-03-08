@@ -1,0 +1,24 @@
+.contactDetails {
+    background-color: $lightColour;
+
+}
+
+.contactForm {
+    background-color: #FFFFFF;
+    input {
+        background-color: $lightColour;
+        &[placeholder] {
+            color: $midColour;
+            font-style: inherit;
+            font-family: $mainFont;
+        }
+    }
+}
+
+
+.contactImage {
+    background-image: url(../deliciousAssets/contact2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+}

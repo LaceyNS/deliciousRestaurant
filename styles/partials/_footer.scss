@@ -2,8 +2,69 @@ footer {
     background-color: $darkColour;
 }
 
+.wrapper {
+    max-width: 1300px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+.footer {
+    text-align: left;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.footerLogo {
+    text-transform: uppercase;
+    color: $secColour;
+    font-size: 3.6rem;
+    padding-bottom: 15px;
+}
+
+
+.footer p,
+.footer li,
+form {
+    border-bottom: 0.5px solid $midColour;
+}
+
+.subscribeForm input[type="email"] {
+    background-color: #525252;
+    width: 80%;
+}
+
+.subscribeForm input[type="email"],
+.subscribeForm button {
+    margin: 25px 0;
+    border: none;
+    float: left;
+}
+
+.subscribeForm input[placeholder] {
+    padding: 15px 25px;
+    color: $lightColour;
+    font-style: italic;
+}
+
+.subscribeForm button {
+    background-color: $secColour;
+    padding: 15px 20px;
+    width: 20%;
+}
+
+
+.socials {
+    display: flex;
+    i {
+        padding: 10px;
+    }
+}
 
 
 .copyright {
     background-color: $darkestColour;
+    padding-left: 10%;
 }
+
