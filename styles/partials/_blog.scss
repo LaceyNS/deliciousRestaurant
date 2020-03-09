@@ -85,10 +85,13 @@
 .blogArticles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     article {
         margin: 25px 0;
         flex-basis: 1 1 150px;
+        max-width: 70%;
         p {
             color: $midColour;
         }
@@ -98,7 +101,16 @@
             font-family: $titleFont;
         }
     }
+}
 
+@media (min-width: 1000px) {
+    .blogArticles {
+        flex-direction: row;
+        justify-content: space-between;
+        article {
+            max-width: 30%;
+        }
+    }
 }
 
 .comment {

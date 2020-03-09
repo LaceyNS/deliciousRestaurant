@@ -10,32 +10,60 @@ img {
     padding: 5% 0;
 }
 
-.recipes {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+.recipeMain {
+    display: flex;
+    flex-direction: column;
 }
 
 .indexPage h2 {
     position: relative;
+    font-size: 2.4rem;
+    margin-bottom: 50px;
 }
 
 .divider {
-    width: 10rem;
+    width: 7rem;
     height: 5px;
     position: absolute;
-    bottom: 0;
-    left: 40%;
+    bottom: -25px;
+    left: 45%;
     background-color: $secColour;
 }
 
 .recipesContent {
     padding: 4rem;
+    p {
+        margin: 50px 0;
+    }
+    a {
+        background-color: $secColour;
+        color: white;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    .recipeMain {
+        flex-direction: row-reverse;
+        img, 
+        .recipesContent {
+            width: 50%;
+        }
+    }
 }
 
 .recipeOptions {
-    padding: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipeOptionsList {
+    padding: 10px;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 5px;
     grid-template-columns: 1fr 1fr;
         li {
             display: flex;
@@ -46,32 +74,94 @@ img {
         }
 }
 
+@media (min-width: 1000px) {
+    .recipeOptions {
+        flex-direction: row;
+        align-items: center;
+        img,
+        .recipeOptionsList {
+            width: 50%;
+        }
+        .recipeOptionsList {
+            padding: 50px;
+        }
+    }
+}
+
 .restaurantImage {
     position: relative;
+    margin: 10px auto;
+    max-width: 300px;
 }
 
 .restaurantMainImage {
-    width: 500px;
-    height: 300px;
-    margin: 0 auto;
+    max-height: 300px;
 }
 
 .seal {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    max-width: 80px;
     position: absolute;
-    top: -30px;
-    right: 20%;
+    top: -10%;
+    right: -10%;
+}
+
+@media (min-width: 740px) {
+    .restaurantImage {
+        max-width: 500px;
+        .seal {
+            height: 100px;
+            max-width: 100px;
+        }
+    }
+}
+
+.restaurants {
+    margin: 50px 0;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+}
+
+@media (min-width: 740px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .testimonial {
     background-color: $lightSecColour;
+    i {
+        color: #EEFD60;
+        &:hover,
+        &:focus {
+            color: #FFFFFF;
+        }
+    }
+}
 
+blockquote {
+    position: relative;
+}
+
+blockquote::before,
+blockquote::after {
+    color: #EEFD60;
+    position: absolute;
+    font-size: 6rem;
+}
+
+blockquote::before {
+    content: open-quote;
+    left: -20%;
+}
+
+blockquote::after {
+    content: close-quote;
+    right: 15%;
+    bottom: 25%;
 }
 
