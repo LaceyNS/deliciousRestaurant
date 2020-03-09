@@ -3,21 +3,42 @@ html {
 }
 
 body {
+    font-family: $mainFont;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0.3px;
+}
+
+h1, 
+h2,
+h3 {
     font-family: $titleFont;
-    font-size: 1.8rem;
     font-weight: 700;
-    line-height: 3.6rem;
+    text-transform: uppercase;
+    line-height: 3.6px;
     letter-spacing: 0.5px;
+    margin: 25px auto;
+}
+
+header h1,
+header h2 {
+    margin: 25px;
 }
 
 .headerLogo a{
     color: black;
     text-decoration: none;
     font-family: $titleFont;
-    font-size: 4.6rem;
+    font-size: 3.6rem;
     font-weight: 700;
     line-height: 2.4rem; 
     letter-spacing: 1.1px;
+}
+
+header a {
+    font-family: $titleFont;
+
 }
 
 .indexPage main {
@@ -31,18 +52,11 @@ body {
 
 .recipeOptions {
     background-color: $lightColour;
-    h3 {
-        text-transform: uppercase;
-    }
     p {
         color: $midColour;
     }
 }
 
-footer h3 {
-    font-family: $titleFont;
-    padding-bottom: 25px;
-}
 
 footer h3,
 footer i {

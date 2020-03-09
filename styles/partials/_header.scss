@@ -14,14 +14,37 @@
 .menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 2rem;
     li {
         display: none;
         a {
             color: $darkColour;
             text-transform: uppercase;
+            &:hover,
+            &:focus {
+                color: $secColour;
+            }
         }
     }
+}
+
+.bars {
+    font-size: 2.4rem;
+}
+
+@media (min-width: 500px) {
+    .headerLogo a {
+        font-size: 4.6rem;
+    }
+    .bars {
+        font-size: 3.6rem;
+    }
+}
+
+a:hover,
+a:focus {
+    color: $secColour;
 }
 
 @media (min-width: 900px) {

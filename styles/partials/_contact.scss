@@ -1,17 +1,52 @@
 .contactDetails {
     background-color: $lightColour;
-
+    padding: 25px;
+    h1 {
+        font-size: 2.4rem;
+        margin: 50px 0;
+    }
+    p,
+    li {
+        color: $midColour;
+        margin-bottom:40px;
+    }
+    time {
+        color: $midColour;
+        span{
+            font-family: $titleFont;
+            color: $darkColour;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $midColour;
+    }
 }
 
 .contactForm {
     background-color: #FFFFFF;
+    margin: 25px;
     input {
         background-color: $lightColour;
+        border: none;
+        padding: 10px 15px;
+        margin: 15px;
+        width: 90%;
         &[placeholder] {
             color: $midColour;
             font-style: inherit;
             font-family: $mainFont;
         }
+        &.messageSpot {
+            padding-bottom: 200px;
+        }
+    }
+    button {
+        border: none;
+        color: $secColour;
+        text-transform: uppercase;
+        font-weight: 700;
+        background: #FFFFFF;
     }
 }
 
@@ -20,5 +55,19 @@
     background-image: url(../deliciousAssets/contact2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25vh;
+    height: 40vh;
+}
+
+@media (min-width: 740px) {
+    .contactPage main {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .contactForm .name,
+    .contactForm .email {
+        width: 40%;
+    }
+    .contactForm .name {
+        margin-right: 7%;
+    }
 }
